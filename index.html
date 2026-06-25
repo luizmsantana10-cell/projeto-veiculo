@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/script_veiculo.js" defer></script>
+    <script src="js/script_veiculo.js" type="module" defer></script>
 </head>
 <body>
     <div id="geral">
@@ -13,48 +13,62 @@
         <form id="Dados_veiculos" >
             <div>
                 <label for="marca">Marca do Carro</label>
-                <input type="text" id="marca" required>
+                <input type="text" id="marca" name="marca" required>
             <br>
                 <label for="modelo">Modelo do Veículo</label>
-                <input type="text" id="modelo" required>
+                <input type="text" id="modelo" name="modelo" required>
             
             <br>
           
                 <label for="placa">Placa do Veículo</label>
-                <input type="text" id="placa" required>
+                <input type="text" id="placa" name="placa" required>
             <br>
                 <label for="ano">Ano de Fabricação do Veículo</label>
-                <input type="text" id="ano" required>   
+                <input type="text" id="ano" name="ano" required>   
              <br>
                 <label for="valor">Valor do Veículo</label>
-                <input type="text" id="valor" required>
+                <input type="text" id="valor" name="valor" required>
                 <br><br>
 
                 <h3>Tipo de Combustivel</h3>
-        <p>selecione as seguintes opções</p>
-        <label for="gasolina">Gasolina</label>
-        <input id="gasolina" name="combustivel" type="radio" required>
-                <br>
-        <label for="etanol">Etanol</label>
-        <input id="etanol" name="combustivel" type="radio" required>
-                <br>
-        <label for="biocombustivel">Biocombustível</label>
-        <input id="biocombustivel" name="combustivel" type="radio" required>
-                <br>
-        <label for="hibrido">Híbrido</label>
-        <input id="hibrido" name="combustivel" type="radio" required>
-                <br>
-        <label for="eletrico">Elétrico</label>
-        <input id="eletrico" name="combustivel" type="radio" required>
-        <br><br>
+                <p>selecione as seguintes opções</p>
+                <label for="gasolina">Gasolina</label>
+                <input id="gasolina" name="combustivel" value="Gasolina" type="radio" required>
+                        <br>
+                <label for="etanol">Etanol</label>
+                <input id="etanol" name="combustivel" value="Etanol" type="radio" required>
+                        <br>
+                <label for="biocombustivel">Biocombustível</label>
+                <input id="biocombustivel" name="combustivel" value="Biocombustível" type="radio" required>
+                        <br>
+                <label for="hibrido">Híbrido</label>
+                <input id="hibrido" name="combustivel" value="Híbrido" type="radio" required>
+                        <br>
+                <label for="eletrico">Elétrico</label>
+                <input id="eletrico" name="combustivel" value="Elétrico" type="radio" required>
+                <br><br>
 
                 <button type="submit">Cadastrar veiculo</button>
                 <button type="reset">Limpar</button>
             </div>
         </form>
-        
+        <br><hr><br>
+
+        <h3>Veículos Cadastrados</h3>
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+            <thead>
+                <tr>
+                    <th>Placa</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Idade</th>
+                    <th>Seguro (10%)</th>
+                    <th>IPVA</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela-veiculos"></tbody>
+        </table>
     </div>
-    
-    
 </body>
-</html> 
+</html>
