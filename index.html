@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script_veiculo.js" defer></script>
+</head>
+<body>
+    <div id="geral">
+        <h2>Projeto veiculo</h2>
+        <p>preencha os dados</p>
+        <form id="Dados_veiculos" >
+            <div>
+                <label for="marca">Marca do Carro</label>
+                <input type="text" id="marca" required>
+            <br>
+                <label for="modelo">Modelo do Veículo</label>
+                <input type="text" id="modelo" required>
+            
+            <br>
+          
+                <label for="placa">Placa do Veículo</label>
+                <input type="text" id="placa" required>
+            <br>
+                <label for="ano">Ano de Fabricação do Veículo</label>
+                <input type="text" id="ano" required>   
+             <br>
+                <label for="valor">Valor do Veículo</label>
+                <input type="text" id="valor" required>
+                <br><br>
+
+                <h3>Tipo de Combustivel</h3>
+        <p>selecione as seguintes opções</p>
+        <label for="gasolina">Gasolina</label>
+        <input type="radio" id="gasolina" name="combustivel" required>
+
+        <label for="etanol">Etanol</label>
+        <input type="radio" id="etanol" name="combustivel" required>
+
+        <label for="biocombustivel">Biocombustível</label>
+        <input type="radio" id="biocombustivel" name="combustivel" required>
+
+        <label for="hibrido">Híbrido</label>
+        <input type="radio" id="hibrido" name="combustivel" required>
+
+        <label for="eletrico">Elétrico</label>
+        <input type="radio" id="eletrico" name="combustivel" required>
+        <br><br>
+
+                <button type="submit">Cadastrar veiculo</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html> 
